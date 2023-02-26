@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/api",
+    "target": "http://localhost:3001",
+    "rewrite": {
+      "^/api/v1": "/v1",
+      "^/api/v2": "/v2"
+    },
+    "headers": {
+      "power-by": "nodejs-gateway"
+    }
+  },
+  {
+    "path": "/app2",
+    "target": "http://localhost:3002"
+  }
+]
